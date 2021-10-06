@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Maths P</string>
+
+    <string name="Arithmetic" translatable="true">
+
+        Arithmetic is a branch of mathematics that consists of the study of numbers,
+        especially concerning the properties of the traditional operations on them—addition,
+        subtraction, multiplication, division, exponentiation and extraction of roots.
+        \nArithmetic is an elementary part of number theory, and number theory is considered to be one of the top-level divisions
+        of modern mathematics,
+        along with algebra, geometry, and analysis. The terms arithmetic and higher arithmetic were used until the beginning of the
+        20th century as synonyms for number theory, and are sometimes still used to refer to a wider part of number theory.\n
+        The prehistory of arithmetic is limited to a small number of artifacts, which may indicate the conception of addition and subtraction,
+        the best-known being the Ishango bone from central Africa, dating from somewhere between 20,000 and 18,000 BC,
+        although its interpretation is disputed.\n
+        The basic arithmetic operations are addition, subtraction, multiplication and division, although arithmetic also
+        includes more advanced operations, such as manipulations of percentages,[3] square roots,
+        exponentiation, logarithmic functions, and even trigonometric functions, in the same vein as logarithms (prosthaphaeresis).
+        Arithmetic expressions must be evaluated according to the intended sequence of operations. There are several methods to specify this,
+        either—most common, together with infix notation—explicitly using parentheses and relying on precedence rules, or using a prefix or postfix
+        notation, which uniquely fix the order of execution by themselves. Any set of objects upon which all four arithmetic operations (except division
+        by zero) can be performed, and where these four operations obey the usual laws (including distributivity), is called a field.
+
+    </string>
+
+    <string name="numberproperty">
+        Basic Number Properties
+The ideas behind the basic properties of real numbers are rather simple. You may even think of it as “common sense” math because no complex analysis is really required.
+        There are four (4) basic properties of real numbers: namely; commutative, associative, distributive and identity. These properties only apply to the operations of
+        addition and multiplication. That means subtraction and division do not have these properties built in.
+        \n\nI. Commutative Property For Addition
+        \nThe sum of two or more real numbers is always the same regardless of the order in which they are added. In other words, real numbers can be added in any order because the sum remains the same.
+\nExamples:
+\na) a + b = b + aa+b=b+a
+\nb) 5 + 7 = 7 + 55+7=7+5
+\nc) {}^ - 4 + 3 = 3 + {}^ - 4 − 4 + 3 = 3 + − 4
+\nd) 1 + 2 + 3 = 3 + 2 + 11+2+3=3+2+1
+\n\nFor Multiplication
+\nThe product of two or more real numbers is not affected by the order in which they are being multiplied. In other words, real numbers can be multiplied in any order because the product remains the same.
+\nExamples:
+\na) a \times b = b \times aa×b=b×a
+\nb) 9 \times 2 = 2 \times 99×2=2×9
+\nc) \left( { - 1} \right)\left( 5 \right) = \left( 5 \right)\left( { - 1} \right)(−1)(5)=(5)(−1)
+        \nd) m \times {}^ - 7 = {}^ - 7 \times mm× − 7= − 7×m
+\n\nII. Associative Property
+For Addition
+        \nThe sum of two or more real numbers is always the same regardless of how you group them. When you add real numbers, any change in their grouping does not affect the sum.
+\nExamples:
+\nthe quantity a plus b added to c is equal to a added to the quantity b plus c
+For Multiplication
+\nThe product of two or more real numbers is always the same regardless of how you group them. When you multiply real numbers, any change in their grouping does not affect the product.
+\nExamples:
+\nthe quantity a times b multiplied to c is equal to a times to the quantity b times c
+\n\nIII. Identity Property
+For Addition
+\nAny real number added to zero (0) is equal to the number itself. Zero is the additive identity since a + 0 = aa+0=a or 0 + a = a0+a=a. You must show that it works both ways!
+\nExamples:
+\nfifteen plus zero is equal to fifteen and negative one plus zero is negative one
+
+        \n\nFor Multiplication
+
+\nAny real number multiplied to one (1) is equal to the number itself. The number one is the multiplicative identity since a \times 1 = aa×1=a or 1 \times a = 11×a=1. You must show that it works both ways!
+
+\nExamples:
+
+\nseven times one is seven while negative five times one is negative five
+\n\nIV. Distributive Property of Multiplication over Addition
+Multiplication distributes over Addition
+
+
+\nMultiplying a factor to a group of real numbers that are being added together is equal to the sum of the products of the factor and each addend in the parenthesis.
+
+\nIn other words, adding two or more real numbers and multiplying it to an outside number is the same as multiplying the outside number to every number inside the parenthesis, then adding their products
+
+    </string>
+    <string name="questions">"An arithmetic sequence is one in which the difference between any two consecutive terms of the sequence is constant. I will call this \"common difference\" d. For example, for the sequence 2, 6, 10, 14, ... we have d = 4 since 6 - 2 = 4, 10 - 6 = 4, 14 - 10 = 4, and so on. Now you try one:  What is the value of d for the following sequence:  1, 11, 21, 31, 41, ... ? "</string>
+
+    //Headings
+    <string name="heading_one">Explanations</string>
+    <string name="heading_two">Questions</string>
+    <string name="heading_three">Videos</string>
+    <string name="heading_fourth">Notes</string>
+
+    //Description
+    <string name="desc_one">Learn the detailed explanation of the various topics need in writhing and passing the Gre successfully.</string>
+    <string name="desc_two">Answer multiple choice questions on the topic you are learning about and get the solutions to the problems after submitting your solutions</string>
+    <string name="desc_three">Watch multiple videos on any course you select, some videos contain explanations whiles other contain questions and slotions. Some may contain both </string>
+    <string name="desc_fourth">Make personalized notes on topics or any other form of note that maybe useful in helping you learn succefully</string>
+
+
+
+</resources>
