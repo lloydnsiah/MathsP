@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q.1"
+        android:id="@+id/ques_no"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:textColor="#CDDC39"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ques_no"
+        android:text="@string/questions"
+        android:id="@+id/questions"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_margin="10dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questions"
+        android:id="@+id/answers_rg"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ans One"
+            android:id="@+id/answer_1"
+            android:textSize="18sp"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ans Two"
+            android:id="@+id/answer_2"
+            android:textSize="18sp"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ans three"
+            android:id="@+id/answer_3"
+            android:textSize="18sp"/>
+
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ans four"
+            android:id="@+id/answer_4"
+            android:textSize="18sp"/>
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/answers_rg"
+        android:background="#34000000"/>
+
+
+</RelativeLayout>

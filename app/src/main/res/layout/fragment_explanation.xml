@@ -1,0 +1,25 @@
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Explanation"
+    >
+
+    <TextView
+        android:id="@+id/explanation_txt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/roboto_light_italic"
+        android:gravity="start"
+        android:padding="10dp"
+        android:text="Explanation"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+
+
+
+</androidx.core.widget.NestedScrollView>
