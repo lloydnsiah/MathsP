@@ -2,14 +2,14 @@ package com.example.mathsp.extras;
 
 public class QuestionsObject {
     private String quesNo;
-    private String question;
+    private int question;
     private String ans_one;
     private String ans_two;
     private String ans_three;
     private String ans_four;
     private String correct_ans;
 
-    public QuestionsObject(String quesNo, String question, String ans_one, String ans_two, String ans_three, String ans_four, String correct_ans) {
+    public QuestionsObject(String quesNo, int question, String ans_one, String ans_two, String ans_three, String ans_four, String correct_ans) {
         this.quesNo = quesNo;
         this.question = question;
         this.ans_one = ans_one;
@@ -27,11 +27,11 @@ public class QuestionsObject {
         this.quesNo = quesNo;
     }
 
-    public String getQuestion() {
+    public int getQuestion() {
         return question;
     }
 
-    public void setQuestion(String question) {
+    public void setQuestion(int question) {
         this.question = question;
     }
 

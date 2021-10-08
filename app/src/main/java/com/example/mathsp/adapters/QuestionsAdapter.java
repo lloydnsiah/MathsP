@@ -44,9 +44,34 @@ public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.View
         holder.ans3.setText(arrayList.get(position).getAns_three());
         holder.ans4.setText(arrayList.get(position).getAns_four());
 
+        holder.radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                String answer = "";
+                String correct_answer = arrayList.get(position).getCorrect_ans();
+                switch (checkedId){
+                    case R.id.answer_1:
+                        answer = (String) holder.ans1.getText();
+                        break;
+                    case R.id.answer_2:
+                        answer = (String) holder.ans2.getText();
+                        break;
+                    case R.id.answer_3:
+                        answer = (String) holder.ans3.getText();
+                        break;
+                    case R.id.answer_4:
+                        answer = (String) holder.ans4.getText();
+                        break;
+                    default:
+                }
+                if (answer.equals(correct_answer)){
+                    Toast.makeText(context, "Correct", Toast.LENGTH_SHORT).show();
+                }else{
+                    Toast.makeText(context, "Wrong, Please Try Again", Toast.LENGTH_SHORT).show();
+                }
 
-
-
+            }
+        });
     }
 
     @Override
@@ -69,13 +94,6 @@ public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.View
             ans3 = itemView.findViewById(R.id.answer_3);
             ans4 = itemView.findViewById(R.id.answer_4);
 
-            radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(RadioGroup group, int checkedId) {
-                    Toast.makeText(context,"Okay", Toast.LENGTH_SHORT).show();
-                    marks++;
-                }
-            });
         }
     }
 }

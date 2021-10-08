@@ -43,12 +43,11 @@ public class Questions extends Fragment {
        arrayList = new ArrayList<>();
        totalque = v.findViewById(R.id.total_questions);
 
-        arrayList.add(new QuestionsObject("1","Questions number","A","B","C","D","ANS"));
-        arrayList.add(new QuestionsObject("1","Questions number","A","B","C","D","ANS"));
-        arrayList.add(new QuestionsObject("1","Questions number","A","B","C","D","ANS"));
-        arrayList.add(new QuestionsObject("1","Questions number","A","B","C","D","ANS"));
-        arrayList.add(new QuestionsObject("1","Questions number","A","B","C","D","ANS"));
-        arrayList.add(new QuestionsObject("1","Questions number","A","B","C","D","ANS"));
+        arrayList.add(new QuestionsObject("1",R.string.questions,"5","4","10","1","10"));
+        arrayList.add(new QuestionsObject("2",R.string.question_2,"b_n = 20 - 2n","b_n = 22 - 2n","b_n = 18 - 2n","b_n = 18n","b_n = 22 - 2n"));
+        arrayList.add(new QuestionsObject("3",R.string.question_3, "5, 2, -1, -4, -7, -10, -13, -16, -19...", "4, 4, 4, 4, 4, 4, 4, 4, 4...", "2.13, 3.34, 4.55, 5.76, 6.97, 8.18, 9.39, 10.6, 11.81...", "1, 1, 2, 3, 5, 8, 13, 21, 34...", "1, 1, 2, 3, 5, 8, 13, 21, 34..."));
+        arrayList.add(new QuestionsObject("4",R.string.question_4,"It will be prime", "It will be a perfect square", "It will be odd", "It will be even.", "It will be a perfect square"));
+
 
 
         recyclerView.setLayoutManager(new LinearLayoutManager(context));

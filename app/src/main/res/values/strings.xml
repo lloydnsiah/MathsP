@@ -73,15 +73,21 @@ Multiplication distributes over Addition
 \nIn other words, adding two or more real numbers and multiplying it to an outside number is the same as multiplying the outside number to every number inside the parenthesis, then adding their products
 
     </string>
-    <string name="questions">"An arithmetic sequence is one in which the difference between any two consecutive terms of the sequence is constant. I will call this \"common difference\" d. For example, for the sequence 2, 6, 10, 14, ... we have d = 4 since 6 - 2 = 4, 10 - 6 = 4, 14 - 10 = 4, and so on. Now you try one:  What is the value of d for the following sequence:  1, 11, 21, 31, 41, ... ? "</string>
+    <string name="questions">"What is the value of d for the following sequence:  1, 11, 21, 31, 41, ... ? "</string>
+    <string name="question_2">Which of the following is the general term b_n of the sequence 20, 18, 16, 14, 12, ... ?</string>
+    <string name="question_3"> Which of the following is *not* an arithmetic sequence?</string>
+    <string name="question_4">Take the sequence of odd numbers and start adding: 1+3+5+7+9+11+... Stop anywhere you want. What will always be true about the sum?</string>
+
 
     //Headings
+    <string name="heading_zero">How To Use The App</string>
     <string name="heading_one">Explanations</string>
     <string name="heading_two">Questions</string>
     <string name="heading_three">Videos</string>
     <string name="heading_fourth">Notes</string>
 
     //Description
+    <string name="desc_zero">There are five sections to the app.\nFirst select the topic you want to learn on the first page.\nSecond you will be given a tabview with four posible options.\nExplanation,Questions,Video and Notes</string>
     <string name="desc_one">Learn the detailed explanation of the various topics need in writhing and passing the Gre successfully.</string>
     <string name="desc_two">Answer multiple choice questions on the topic you are learning about and get the solutions to the problems after submitting your solutions</string>
     <string name="desc_three">Watch multiple videos on any course you select, some videos contain explanations whiles other contain questions and slotions. Some may contain both </string>

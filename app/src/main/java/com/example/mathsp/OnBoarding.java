@@ -50,7 +50,7 @@ public class OnBoarding extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                if (getitem(0) < 3)
+                if (getitem(0) < 4)
                     mSLideViewPager.setCurrentItem(getitem(1),true);
                 else {
 
@@ -87,7 +87,7 @@ public class OnBoarding extends AppCompatActivity {
 
     public void setUpindicator(int position){
 
-        dots = new TextView[4];
+        dots = new TextView[5];
         mDotLayout.removeAllViews();
 
         for (int i = 0 ; i < dots.length ; i++){

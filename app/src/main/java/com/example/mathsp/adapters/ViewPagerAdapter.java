@@ -18,7 +18,7 @@ public class ViewPagerAdapter extends PagerAdapter {
     Context context;
 
     int images[] = {
-
+            R.drawable.img0,
             R.drawable.img01,
             R.drawable.img02,
             R.drawable.img03,
@@ -27,7 +27,7 @@ public class ViewPagerAdapter extends PagerAdapter {
     };
 
     int headings[] = {
-
+            R.string.heading_zero,
             R.string.heading_one,
             R.string.heading_two,
             R.string.heading_three,
@@ -35,7 +35,7 @@ public class ViewPagerAdapter extends PagerAdapter {
     };
 
     int description[] = {
-
+            R.string.desc_zero,
             R.string.desc_one,
             R.string.desc_two,
             R.string.desc_three,
