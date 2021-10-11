@@ -56,16 +56,20 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(firstAdapter);
         firstAdapter.notifyDataSetChanged();
 
+        arrayAdapter = new ArrayAdapter<>(this,R.layout.topics_list_txt,topicsList);
+        arrayAdapter.notifyDataSetChanged();
+        listView.setAdapter(arrayAdapter);
 
         reference = FirebaseDatabase.getInstance().getReference().child("Topics");
 
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-
+                topicsList.clear();
                 for (DataSnapshot snap: snapshot.getChildren()){
                     topicsList.add(snap.getValue().toString());
                 }
+                arrayAdapter.notifyDataSetChanged();
             }
 
             @Override
@@ -74,14 +78,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        arrayAdapter = new ArrayAdapter<>(this,R.layout.topics_list_txt,arrayList);
-        arrayAdapter.notifyDataSetChanged();
-        listView.setAdapter(arrayAdapter);
+
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String data = arrayList.get(position).toString();
+                String data = topicsList.get(position).toString();
                 Intent intent = new Intent(context, Details.class);
                 intent.putExtra("Topic",data);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

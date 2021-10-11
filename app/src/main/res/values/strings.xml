@@ -1,27 +1,6 @@
 <resources>
     <string name="app_name">Maths P</string>
 
-    <string name="Arithmetic" translatable="true">
-
-        Arithmetic is a branch of mathematics that consists of the study of numbers,
-        especially concerning the properties of the traditional operations on them—addition,
-        subtraction, multiplication, division, exponentiation and extraction of roots.
-        \nArithmetic is an elementary part of number theory, and number theory is considered to be one of the top-level divisions
-        of modern mathematics,
-        along with algebra, geometry, and analysis. The terms arithmetic and higher arithmetic were used until the beginning of the
-        20th century as synonyms for number theory, and are sometimes still used to refer to a wider part of number theory.\n
-        The prehistory of arithmetic is limited to a small number of artifacts, which may indicate the conception of addition and subtraction,
-        the best-known being the Ishango bone from central Africa, dating from somewhere between 20,000 and 18,000 BC,
-        although its interpretation is disputed.\n
-        The basic arithmetic operations are addition, subtraction, multiplication and division, although arithmetic also
-        includes more advanced operations, such as manipulations of percentages,[3] square roots,
-        exponentiation, logarithmic functions, and even trigonometric functions, in the same vein as logarithms (prosthaphaeresis).
-        Arithmetic expressions must be evaluated according to the intended sequence of operations. There are several methods to specify this,
-        either—most common, together with infix notation—explicitly using parentheses and relying on precedence rules, or using a prefix or postfix
-        notation, which uniquely fix the order of execution by themselves. Any set of objects upon which all four arithmetic operations (except division
-        by zero) can be performed, and where these four operations obey the usual laws (including distributivity), is called a field.
-
-    </string>
 
     <string name="numberproperty">
         Basic Number Properties
