@@ -1,5 +1,6 @@
 package com.example.mathsp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -17,6 +18,11 @@ import android.widget.Toast;
 import com.example.mathsp.adapters.CustomAdapter;
 import com.example.mathsp.adapters.FirstAdapter;
 import com.example.mathsp.fragments.Explanation;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
@@ -27,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private FirstAdapter firstAdapter;
     private Context context;
     private ListView listView;
-
+    private DatabaseReference reference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
         firstAdapter = new FirstAdapter(context,arrayList);
         recyclerView.setAdapter(firstAdapter);
         firstAdapter.notifyDataSetChanged();
+
 
         topicsList.add("Arithmetic");
         topicsList.add("Number Properties");
@@ -77,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
 
         CustomAdapter customAdapter = new CustomAdapter(context,topicsList);
         listView.setAdapter(customAdapter);
+
 
     }
 
