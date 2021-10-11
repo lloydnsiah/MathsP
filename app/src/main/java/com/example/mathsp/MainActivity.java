@@ -74,12 +74,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        arrayAdapter = new ArrayAdapter<>(this,R.layout.topics_list_txt,arrayList);
-//        arrayAdapter.notifyDataSetChanged();
-//        listView.setAdapter(arrayAdapter);
+        arrayAdapter = new ArrayAdapter<>(this,R.layout.topics_list_txt,arrayList);
+        arrayAdapter.notifyDataSetChanged();
+        listView.setAdapter(arrayAdapter);
 
-        CustomAdapter customAdapter = new CustomAdapter(context,topicsList);
-        listView.setAdapter(customAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String data = arrayList.get(position).toString();
+                Intent intent = new Intent(context, Details.class);
+                intent.putExtra("Topic",data);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
+            }
+        });
+
+//        CustomAdapter customAdapter = new CustomAdapter(context,topicsList);
+//        listView.setAdapter(customAdapter);
 
 
     }
