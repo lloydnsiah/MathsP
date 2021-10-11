@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<String> arrayList = new ArrayList<>();
     private ArrayList<String> topicsList = new ArrayList<>();
     private FirstAdapter firstAdapter;
+    private ArrayAdapter<String> arrayAdapter;
     private Context context;
     private ListView listView;
     private DatabaseReference reference;
@@ -56,31 +57,26 @@ public class MainActivity extends AppCompatActivity {
         firstAdapter.notifyDataSetChanged();
 
 
-        topicsList.add("Arithmetic");
-        topicsList.add("Number Properties");
-        topicsList.add("Proportions and Math Formulas");
-        topicsList.add("Algebra");
-        topicsList.add("Statistics");
-        topicsList.add("Geometry");
-        topicsList.add("Word Problems");
-        topicsList.add("Translation Table");
-        topicsList.add("Logic Problems");
-        topicsList.add("Tables");
-        topicsList.add("Graphs");
-        topicsList.add("Charts");
-        topicsList.add("Quantitative Comparison");
-        topicsList.add("Calculus");
-        topicsList.add("Angles");
-        topicsList.add("Surd");
-        topicsList.add("Number theory");
-        topicsList.add("Functions");
-        topicsList.add("Raion and Rates");
-        topicsList.add("Proportion");
-        topicsList.add("Trignometry");
-        topicsList.add("Set Theory");
-        topicsList.add("Percentages");
-        topicsList.add("Number Bases");
-        topicsList.add("Rigid motion");
+        reference = FirebaseDatabase.getInstance().getReference().child("Topics");
+
+        reference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                for (DataSnapshot snap: snapshot.getChildren()){
+                    topicsList.add(snap.getValue().toString());
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+//        arrayAdapter = new ArrayAdapter<>(this,R.layout.topics_list_txt,arrayList);
+//        arrayAdapter.notifyDataSetChanged();
+//        listView.setAdapter(arrayAdapter);
 
         CustomAdapter customAdapter = new CustomAdapter(context,topicsList);
         listView.setAdapter(customAdapter);
@@ -93,4 +89,5 @@ public class MainActivity extends AppCompatActivity {
         context = getApplicationContext();
         listView = findViewById(R.id.listview_1);
     }
+
 }
