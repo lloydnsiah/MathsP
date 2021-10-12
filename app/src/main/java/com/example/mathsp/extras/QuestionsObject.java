@@ -19,6 +19,9 @@ public class QuestionsObject {
         this.correctans = correct_ans;
     }
 
+    public QuestionsObject() {
+    }
+
     public String getNo() {
         return no;
     }
@@ -67,11 +70,11 @@ public class QuestionsObject {
         this.ans4 = ans4;
     }
 
-    public String getCorrect_ans() {
+    public String getCorrectans() {
         return correctans;
     }
 
-    public void setCorrect_ans(String correct_ans) {
+    public void setCorrectans(String correct_ans) {
         this.correctans = correct_ans;
     }
 }

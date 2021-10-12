@@ -48,7 +48,7 @@ public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.View
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 String answer = "";
-                String correct_answer = arrayList.get(position).getCorrect_ans();
+                String correct_answer = arrayList.get(position).getCorrectans();
                 switch (checkedId){
                     case R.id.answer_1:
                         answer = (String) holder.ans1.getText();
@@ -69,7 +69,6 @@ public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.View
                 }else{
                     Toast.makeText(context, "Wrong, Please Try Again", Toast.LENGTH_SHORT).show();
                 }
-
             }
         });
     }

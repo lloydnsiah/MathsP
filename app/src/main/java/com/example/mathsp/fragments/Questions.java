@@ -63,7 +63,7 @@ public class Questions extends Fragment {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for (DataSnapshot snap:snapshot.getChildren()){
                     QuestionsObject object = snap.getValue(QuestionsObject.class);
-                    arrayList.add(new QuestionsObject(object.getNo(),object.getQuestion(),object.getAns1(),object.getAns2(),object.getAns3(),object.getAns4(),object.getCorrect_ans()));
+                    arrayList.add(new QuestionsObject(object.getNo(),object.getQuestion(),object.getAns1(),object.getAns2(),object.getAns3(),object.getAns4(),object.getCorrectans()));
                 }
                 adapter.notifyDataSetChanged();
             }
