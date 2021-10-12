@@ -7,49 +7,53 @@
 The ideas behind the basic properties of real numbers are rather simple. You may even think of it as “common sense” math because no complex analysis is really required.
         There are four (4) basic properties of real numbers: namely; commutative, associative, distributive and identity. These properties only apply to the operations of
         addition and multiplication. That means subtraction and division do not have these properties built in.
-        \n\nI. Commutative Property For Addition
-        \nThe sum of two or more real numbers is always the same regardless of the order in which they are added. In other words, real numbers can be added in any order because the sum remains the same.
-\nExamples:
-\na) a + b = b + aa+b=b+a
-\nb) 5 + 7 = 7 + 55+7=7+5
-\nc) {}^ - 4 + 3 = 3 + {}^ - 4 − 4 + 3 = 3 + − 4
-\nd) 1 + 2 + 3 = 3 + 2 + 11+2+3=3+2+1
-\n\nFor Multiplication
-\nThe product of two or more real numbers is not affected by the order in which they are being multiplied. In other words, real numbers can be multiplied in any order because the product remains the same.
-\nExamples:
-\na) a \times b = b \times aa×b=b×a
-\nb) 9 \times 2 = 2 \times 99×2=2×9
-\nc) \left( { - 1} \right)\left( 5 \right) = \left( 5 \right)\left( { - 1} \right)(−1)(5)=(5)(−1)
-        \nd) m \times {}^ - 7 = {}^ - 7 \times mm× − 7= − 7×m
-\n\nII. Associative Property
+
+           I. Commutative Property For Addition
+        The sum of two or more real numbers is always the same regardless of the order in which they are added. In other words, real numbers can be added in any order because the sum remains the same.
+ Examples:
+a) a + b = b + aa+b=b+a
+b) 5 + 7 = 7 + 55+7=7+5
+c) {}^ - 4 + 3 = 3 + {}^ - 4 − 4 + 3 = 3 + − 4
+d) 1 + 2 + 3 = 3 + 2 + 11+2+3=3+2+1
+
+        For Multiplication
+The product of two or more real numbers is not affected by the order in which they are being multiplied. In other words, real numbers can be multiplied in any order because the product remains the same.
+Examples:
+a) a \times b = b \times aa×b=b×a
+b) 9 \times 2 = 2 \times 99×2=2×9
+c) \left( { - 1} \right)\left( 5 \right) = \left( 5 \right)\left( { - 1} \right)(−1)(5)=(5)(−1)
+        d) m \times {}^ - 7 = {}^ - 7 \times mm× − 7= − 7×m
+
+        II. Associative Property
 For Addition
-        \nThe sum of two or more real numbers is always the same regardless of how you group them. When you add real numbers, any change in their grouping does not affect the sum.
-\nExamples:
-\nthe quantity a plus b added to c is equal to a added to the quantity b plus c
+        The sum of two or more real numbers is always the same regardless of how you group them. When you add real numbers, any change in their grouping does not affect the sum.
+Examples:
+the quantity a plus b added to c is equal to a added to the quantity b plus c
 For Multiplication
-\nThe product of two or more real numbers is always the same regardless of how you group them. When you multiply real numbers, any change in their grouping does not affect the product.
-\nExamples:
-\nthe quantity a times b multiplied to c is equal to a times to the quantity b times c
-\n\nIII. Identity Property
+The product of two or more real numbers is always the same regardless of how you group them. When you multiply real numbers, any change in their grouping does not affect the product.
+Examples:
+the quantity a times b multiplied to c is equal to a times to the quantity b times c
+
+        III. Identity Property
 For Addition
-\nAny real number added to zero (0) is equal to the number itself. Zero is the additive identity since a + 0 = aa+0=a or 0 + a = a0+a=a. You must show that it works both ways!
-\nExamples:
-\nfifteen plus zero is equal to fifteen and negative one plus zero is negative one
+Any real number added to zero (0) is equal to the number itself. Zero is the additive identity since a + 0 = aa+0=a or 0 + a = a0+a=a. You must show that it works both ways!
+Examples:
+fifteen plus zero is equal to fifteen and negative one plus zero is negative one
 
-        \n\nFor Multiplication
+        For Multiplication
 
-\nAny real number multiplied to one (1) is equal to the number itself. The number one is the multiplicative identity since a \times 1 = aa×1=a or 1 \times a = 11×a=1. You must show that it works both ways!
+Any real number multiplied to one (1) is equal to the number itself. The number one is the multiplicative identity since a \times 1 = aa×1=a or 1 \times a = 11×a=1. You must show that it works both ways!
 
-\nExamples:
+Examples:
 
-\nseven times one is seven while negative five times one is negative five
-\n\nIV. Distributive Property of Multiplication over Addition
+seven times one is seven while negative five times one is negative five
+
+        IV. Distributive Property of Multiplication over Addition
 Multiplication distributes over Addition
 
+Multiplying a factor to a group of real numbers that are being added together is equal to the sum of the products of the factor and each addend in the parenthesis.
 
-\nMultiplying a factor to a group of real numbers that are being added together is equal to the sum of the products of the factor and each addend in the parenthesis.
-
-\nIn other words, adding two or more real numbers and multiplying it to an outside number is the same as multiplying the outside number to every number inside the parenthesis, then adding their products
+In other words, adding two or more real numbers and multiplying it to an outside number is the same as multiplying the outside number to every number inside the parenthesis, then adding their products
 
     </string>
     <string name="questions">"What is the value of d for the following sequence:  1, 11, 21, 31, 41, ... ? "</string>

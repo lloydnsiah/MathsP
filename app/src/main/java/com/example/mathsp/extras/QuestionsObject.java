@@ -1,77 +1,77 @@
 package com.example.mathsp.extras;
 
 public class QuestionsObject {
-    private String quesNo;
-    private int question;
-    private String ans_one;
-    private String ans_two;
-    private String ans_three;
-    private String ans_four;
-    private String correct_ans;
+    private String no;
+    private String question;
+    private String ans1;
+    private String ans2;
+    private String ans3;
+    private String ans4;
+    private String correctans;
 
-    public QuestionsObject(String quesNo, int question, String ans_one, String ans_two, String ans_three, String ans_four, String correct_ans) {
-        this.quesNo = quesNo;
+    public QuestionsObject(String quesNo, String question, String ans_one, String ans_two, String ans_three, String ans_four, String correct_ans) {
+        this.no = quesNo;
         this.question = question;
-        this.ans_one = ans_one;
-        this.ans_two = ans_two;
-        this.ans_three = ans_three;
-        this.ans_four = ans_four;
-        this.correct_ans = correct_ans;
+        this.ans1 = ans_one;
+        this.ans2 = ans_two;
+        this.ans3 = ans_three;
+        this.ans4 = ans_four;
+        this.correctans = correct_ans;
     }
 
-    public String getQuesNo() {
-        return quesNo;
+    public String getNo() {
+        return no;
     }
 
-    public void setQuesNo(String quesNo) {
-        this.quesNo = quesNo;
+    public void setNo(String no) {
+        this.no = no;
     }
 
-    public int getQuestion() {
+    public String getQuestion() {
         return question;
     }
 
-    public void setQuestion(int question) {
+    public void setQuestion(String question) {
         this.question = question;
     }
 
-    public String getAns_one() {
-        return ans_one;
+    public String getAns1() {
+        return ans1;
     }
 
-    public void setAns_one(String ans_one) {
-        this.ans_one = ans_one;
+    public void setAns1(String ans1) {
+        this.ans1 = ans1;
     }
 
-    public String getAns_two() {
-        return ans_two;
+    public String getAns2() {
+        return ans2;
     }
 
-    public void setAns_two(String ans_two) {
-        this.ans_two = ans_two;
+    public void setAns2(String ans2) {
+        this.ans2 = ans2;
     }
 
-    public String getAns_three() {
-        return ans_three;
+    public String getAns3() {
+        return ans3;
     }
 
-    public void setAns_three(String ans_three) {
-        this.ans_three = ans_three;
+    public void setAns3(String ans3) {
+        this.ans3 = ans3;
     }
 
-    public String getAns_four() {
-        return ans_four;
+    public String getAns4() {
+        return ans4;
     }
 
-    public void setAns_four(String ans_four) {
-        this.ans_four = ans_four;
+    public void setAns4(String ans4) {
+        this.ans4 = ans4;
     }
 
     public String getCorrect_ans() {
-        return correct_ans;
+        return correctans;
     }
 
     public void setCorrect_ans(String correct_ans) {
-        this.correct_ans = correct_ans;
+        this.correctans = correct_ans;
     }
 }

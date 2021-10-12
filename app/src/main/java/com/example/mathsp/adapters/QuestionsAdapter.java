@@ -37,12 +37,12 @@ public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.View
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.qnum.setText("Q" + arrayList.get(position).getQuesNo());
+        holder.qnum.setText("Q" + arrayList.get(position).getNo());
         holder.question.setText(arrayList.get(position).getQuestion());
-        holder.ans1.setText(arrayList.get(position).getAns_one());
-        holder.ans2.setText(arrayList.get(position).getAns_two());
-        holder.ans3.setText(arrayList.get(position).getAns_three());
-        holder.ans4.setText(arrayList.get(position).getAns_four());
+        holder.ans1.setText(arrayList.get(position).getAns1());
+        holder.ans2.setText(arrayList.get(position).getAns2());
+        holder.ans3.setText(arrayList.get(position).getAns3());
+        holder.ans4.setText(arrayList.get(position).getAns4());
 
         holder.radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
