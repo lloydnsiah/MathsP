@@ -64,11 +64,57 @@
 
     </RadioGroup>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Explanation"
+        android:layout_below="@id/answers_rg"
+        android:id="@+id/explanation"
+        android:textAlignment="textEnd"
+        android:layout_marginEnd="10dp"
+        android:textSize="18sp"
+        android:textColor="#CDDC39"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/explanation"
+        android:orientation="vertical"
+        android:id="@+id/linear_explanation"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/numberproperty"
+            android:fontFamily="@font/poppins"
+            android:textSize="18sp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Collapse"
+            android:layout_below="@id/answers_rg"
+            android:id="@+id/collapse"
+            android:textAlignment="textEnd"
+            android:layout_marginEnd="10dp"
+            android:textSize="18sp"
+            android:textColor="#F44336"/>
+
+    </LinearLayout>
+
+
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_below="@id/answers_rg"
+        android:layout_below="@id/explanation"
         android:background="#34000000"/>
+
+
+
 
 
 </RelativeLayout>

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -20,12 +21,10 @@ import androidx.recyclerview.widget.RecyclerView;
 public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.ViewHolder> {
     private Context context;
     private ArrayList<QuestionsObject> arrayList;
-    private int marks;
 
-    public QuestionsAdapter(Context context, ArrayList<QuestionsObject> arrayList,int marks) {
+    public QuestionsAdapter(Context context, ArrayList<QuestionsObject> arrayList) {
         this.context = context;
         this.arrayList = arrayList;
-        this.marks = marks;
     }
 
     @NonNull
@@ -71,6 +70,22 @@ public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.View
                 }
             }
         });
+
+        holder.expand.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                holder.linear_exp.setVisibility(View.VISIBLE);
+                holder.expand.setVisibility(View.INVISIBLE);
+            }
+        });
+
+        holder.collapse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                holder.linear_exp.setVisibility(View.GONE);
+                holder.expand.setVisibility(View.VISIBLE);
+            }
+        });
     }
 
     @Override
@@ -82,6 +97,8 @@ public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.View
         private TextView qnum,question;
         private RadioGroup radioGroup;
         private RadioButton ans1,ans2,ans3,ans4;
+        private TextView expand,collapse;
+        private LinearLayout linear_exp;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -92,7 +109,9 @@ public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.View
             ans2 = itemView.findViewById(R.id.answer_2);
             ans3 = itemView.findViewById(R.id.answer_3);
             ans4 = itemView.findViewById(R.id.answer_4);
-
+            expand = itemView.findViewById(R.id.explanation);
+            collapse = itemView.findViewById(R.id.collapse);
+            linear_exp = itemView.findViewById(R.id.linear_explanation);
         }
     }
 }

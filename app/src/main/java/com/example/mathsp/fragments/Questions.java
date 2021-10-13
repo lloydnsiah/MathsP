@@ -29,14 +29,10 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 public class Questions extends Fragment {
-    private LinearLayout linear1;
-    private Button submit;
     private RecyclerView recyclerView;
     private QuestionsAdapter adapter;
     private Context context;
     private ArrayList<QuestionsObject> arrayList;
-    private TextView totalque;
-    private int questions = 0;
     private DatabaseReference reference;
 
     @Override
@@ -44,12 +40,9 @@ public class Questions extends Fragment {
                              Bundle savedInstanceState) {
 
        View v = inflater.inflate(R.layout.fragment_questions, container, false);
-       linear1 = v.findViewById(R.id.linear_questions);
        context = getContext();
-       submit = v.findViewById(R.id.btn_submit_ans);
        recyclerView = v.findViewById(R.id.recycler_view_questions);
        arrayList = new ArrayList<>();
-       totalque = v.findViewById(R.id.total_questions);
 
 //        arrayList.add(new QuestionsObject("1",R.string.questions,"5","4","10","1","10"));
 //        arrayList.add(new QuestionsObject("2",R.string.question_2,"b_n = 20 - 2n","b_n = 22 - 2n","b_n = 18 - 2n","b_n = 18n","b_n = 22 - 2n"));
@@ -76,23 +69,10 @@ public class Questions extends Fragment {
 
 
         recyclerView.setLayoutManager(new LinearLayoutManager(context));
-        adapter =new QuestionsAdapter(context,arrayList,questions);
+        adapter =new QuestionsAdapter(context,arrayList);
         adapter.notifyDataSetChanged();
         recyclerView.setAdapter(adapter);
 
-       submit.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               if (submit.getText().equals("Submit")){
-               linear1.setVisibility(View.VISIBLE);
-               submit.setText("Cancel");
-               totalque.setText(String.valueOf(arrayList));
-               }else if (submit.getText().equals("Cancel")){
-                   linear1.setVisibility(View.INVISIBLE);
-                   submit.setText("Submit");
-               }
-           }
-       });
        return v;
     }
 }
